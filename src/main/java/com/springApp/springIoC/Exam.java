@@ -13,7 +13,11 @@ public class Exam {
     public Exam(AnswerCheckerInterface answerChecker, String subject) {
         this.answerChecker = answerChecker;
         this.subject = subject;
-        System.out.println("Exam constructor is initiated.");
+        System.out.println("Exam constructor is initiated");
+    }
+
+    public Exam() {
+        System.out.println("Exam non-argument constructor is initiated");
     }
 
     public AnswerCheckerInterface getAnswerChecker() {
@@ -22,7 +26,7 @@ public class Exam {
 
     public void setAnswerChecker(AnswerCheckerInterface answerChecker) {
         this.answerChecker = answerChecker;
-        System.out.println("We've just set answerChecker using setter.");
+        System.out.println("We've just set answerChecker using setter in Exam");
     }
 
     public String getSubject() {
@@ -31,6 +35,7 @@ public class Exam {
 
     public void setSubject(String subject) {
         this.subject = subject;
+        System.out.println("We've just set subject using setter in Exam");
     }
 
     public void examCheck() {

@@ -6,13 +6,13 @@ package com.springApp.springIoC;
  * @version 1.0
  */
 
-public class AnswerChecker implements AnswerCheckerInterface {
-    public AnswerChecker() {
-        System.out.println("AnswerChecker constructor initiated");
+public class AnswerChecker2 implements AnswerCheckerInterface {
+    public AnswerChecker2() {
+        System.out.println("AnswerChecker2 constructor initiated");
     }
 
     public void checkAnswer() {
         //Here should be some business logic...
-        System.out.println("Now we are checking answer from AnswerChecker");
+        System.out.println("Now we are checking answer from AnswerChecker2");
     }
 }

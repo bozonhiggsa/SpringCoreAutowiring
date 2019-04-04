@@ -24,7 +24,10 @@
     </bean>
 
     <!-- Definition for answerChecker bean -->
-    <bean id="answerChecker" class="com.springApp.springIoC.AnswerChecker">
+    <bean id="checker" class="com.springApp.springIoC.AnswerChecker">
+    </bean>
+
+    <bean id="answerChecker" class="com.springApp.springIoC.AnswerChecker2" >
     </bean>
 
     <bean id="user1" class="com.springApp.springIoC.User1">
@@ -37,7 +40,7 @@
         <property name="age" value="20"/>
     </bean>
 
-    <bean name="user2pro" class="com.springApp.springIoC.User2">
+    <bean name="user2pro" class="com.springApp.springIoC.User2" scope="prototype">
         <property name="name" value="Lena"/>
         <property name="age" value="25"/>
     </bean>

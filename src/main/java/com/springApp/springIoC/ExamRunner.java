@@ -11,9 +11,11 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class ExamRunner {
     public static void main(String[] args) {
         ApplicationContext context =
-                new ClassPathXmlApplicationContext("autowiring-by-name-config.xml");
+                new ClassPathXmlApplicationContext("config.xml");
 
+        System.out.println("-------------------------------");
         System.out.println("Context is created");
+        System.out.println("-------------------------------");
 
         Exam exam = context.getBean("exam", Exam.class);
         exam.examCheck();
